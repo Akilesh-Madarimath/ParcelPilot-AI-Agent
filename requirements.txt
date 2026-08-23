@@ -2,3 +2,4 @@ streamlit
 google-genai
 pandas
 python-dotenv
+pypdf
