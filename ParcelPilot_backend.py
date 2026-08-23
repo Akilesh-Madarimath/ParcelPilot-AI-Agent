@@ -8,7 +8,7 @@ from pypdf import PdfReader
 # CONFIGURATION
 # ============================================================
 
-DATA_FILE = r"C:\Users\kamad\OneDrive\Desktop\ParcelPilot\ParcelPilot_Assessment_Data.xlsx"
+DATA_FILE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "ParcelPilot_Assessment_Data.xlsx")
 
 MODEL_NAME = "gemini-3.6-flash"
 
@@ -1090,6 +1090,7 @@ def backend_status():
         "model": MODEL_NAME,
         "gemini_configured": client is not None
     }
+
 
 
 
