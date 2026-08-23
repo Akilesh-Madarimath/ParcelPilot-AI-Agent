@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+.env
+.streamlit/secrets.toml
+ParcelPilot_backend_backup.py
+ParcelPilot_backend_before_escalation_fix.py
+ParcelPilot_backend_before_lookup_fix.py
