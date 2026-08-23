@@ -931,11 +931,9 @@ try:
         api_key=os.environ.get("GEMINI_API_KEY")
     )
 
-except Exception:
+except Exception as e:
 
     print("GEMINI INITIALIZATION ERROR:", repr(e))
-    client = None
-# ============================================================
 # SYSTEM INSTRUCTION
 # ============================================================
 
@@ -1090,6 +1088,7 @@ def backend_status():
         "model": MODEL_NAME,
         "gemini_configured": client is not None
     }
+
 
 
 
