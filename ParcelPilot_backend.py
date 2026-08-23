@@ -1086,8 +1086,9 @@ def backend_status():
         "tickets": len(tickets),
         "documents": len(document_texts),
         "model": MODEL_NAME,
-        "gemini_configured": client is not None
+        "gemini_configured": globals().get("client") is not None
     }
+
 
 
 
